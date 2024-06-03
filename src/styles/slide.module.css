@@ -1,0 +1,242 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-container {
+  width: 100%;
+  max-width: 1146px;
+  height: 550px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+.furniture-content {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: calc(25% - 40px);
+  opacity: 1;
+  transition: 700ms ease-in-out;
+  transform: scale(1);
+  display: flex;
+}
+
+.furniture-content:nth-child(1) {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+}
+
+.furniture-content:nth-child(1) .image {
+  width: 97%;
+  margin-left: 20px;
+}
+
+.furniture-content:nth-child(2) {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  height: 50%;
+}
+
+.furniture-content:nth-child(2) .image {
+  margin-left: 70%;
+  width: 85%;
+}
+
+.furniture-content:nth-child(3) {
+  display: flex;
+  align-items: center;
+  width: 32%;
+  height: 48%;
+  position: absolute;
+  top: 52%;
+  left: 36%;
+}
+
+.furniture-content:nth-child(3) .image {
+  width: 85%;
+  margin-left: 22%;
+}
+
+.furniture-content:nth-child(4) {
+  display: flex;
+  align-items: center;
+  width: 31%;
+  height: 48%;
+  position: absolute;
+  top: 52%;
+  left: 69%;
+}
+
+.furniture-content:nth-child(4) .image {
+  width: 85%;
+  margin-left: 22%;
+}
+
+.furniture-item {
+  position: absolute;
+  z-index: 100;
+  margin-top: 20px;
+  top: 0;
+}
+
+.furniture-item p {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--color-thm-1);
+}
+
+.furniture-item h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.12px;
+}
+
+.furniture-item a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.btn-grp button {
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: var(--color-thm-1);
+}
+
+.showPrev {
+  position: absolute;
+  height: 77%;
+  top: 20.5%;
+  left: 5%;
+  border: none;
+  font-size: 25px;
+  background: transparent;
+  color: var(--color-thm-1);
+  cursor: pointer;
+}
+
+.showMore {
+  position: absolute;
+  height: 77%;
+  top: 20.5%;
+  right: 5%;
+  border: none;
+  font-size: 25px;
+  background: transparent;
+  color: var(--color-thm-1);
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .product-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .furniture-content {
+    overflow: hidden;
+  }
+
+  .furniture-content:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+  }
+
+  .furniture-content:nth-child(1) .image {
+    width: 97%;
+  }
+
+  .furniture-content:nth-child(2) {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+  }
+
+  .furniture-content:nth-child(1) .image,
+  .furniture-content:nth-child(2) .image,
+  .furniture-content:nth-child(3) .image,
+  .furniture-content:nth-child(4) .image {
+    margin-left: 40%;
+    width: 85%;
+    height: 100%;
+  }
+
+  .furniture-content:nth-child(3) {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    position: relative;
+    top: 72%;
+    width: 90%;
+    left: 0;
+  }
+
+  .furniture-content:nth-child(4) {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    position: relative;
+    top: 82%;
+    left: 0;
+  }
+
+  .furniture-item {
+    position: absolute;
+    z-index: 1000;
+    margin-top: 15px;
+    left: 30px;
+  }
+
+  .showMore{
+    display: none;
+  }
+  .showPrev{
+    display: none;
+  }
+}
+
+@media (max-width: 565px) {
+  .furniture-content {
+    width: 100%;
+  }
+
+  .furniture-content:nth-child(1) .image,
+  .furniture-content:nth-child(2) .image,
+  .furniture-content:nth-child(3) .image,
+  .furniture-content:nth-child(4) .image {
+    margin-left: 53%;
+  }
+
+  .furniture-content:nth-child(1) .image,
+  .furniture-content:nth-child(2) .image,
+  .furniture-content:nth-child(3) .image,
+  .furniture-content:nth-child(4) .image {
+    width: 50%;
+    height: 100%;
+  }
+}

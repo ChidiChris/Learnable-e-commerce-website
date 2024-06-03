@@ -1,0 +1,122 @@
+.cartBackground {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  min-height: 600px;
+  gap: 40px;
+  opacity: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartBackground img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.cartBackground .action-container {
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.action-container .p-tag {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.24px;
+  text-align: center;
+  color: #23a6f0;
+}
+
+.action-container h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.24px;
+  text-align: center;
+  color: #252b42;
+  width: 50%;
+}
+
+.action-container .p-tag2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.24px;
+  text-align: center;
+  color: #737373;
+  width: 30%;
+}
+
+.action-container h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.12px;
+  text-align: center;
+  color: #23856d;
+}
+
+.action-container button {
+  width: Hug (292px) px;
+  height: Fixed (52px) px;
+  padding: 15px 40px 15px 40px;
+  gap: 10px;
+  border-radius: 5px;
+  opacity: 0px;
+  border: none;
+  background: #23a6f0;
+  color: #fff;
+  cursor: pointer;
+  transition: all ease-in-out 700ms;
+}
+
+.action-container button:hover{
+  background: #138cb7;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 1155px) {
+  .action-container h2 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 935px) {
+  .action-container h2 {
+    width: 60%;
+  }
+
+  .action-container .p-tag2 {
+    width: 45%;
+  }
+}
+@media (max-width: 775px) {
+  .action-container h2 {
+    width: 65%;
+  }
+}
+
+@media (max-width: 465px) {
+  .cartBackground {
+    min-height: 700px;
+    max-height: 0px;
+  }
+  .cartBackground .action-container {
+    top: 0;
+    bottom: 0;
+    padding-top: 40px 0;
+  }
+  .action-container h2 {
+    width: 73.5%;
+  }
+}

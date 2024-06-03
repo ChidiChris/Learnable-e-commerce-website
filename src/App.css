@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bg-primary: #fafafa;
+  --bg-secondary: #23856d;
+  --bg-btn-txt: #23a6f0;
+  --color-primary: #737373;
+  --color-secondary: #252b42;
+  --color-thm-1: #2dc071;
+  --color-thm-2: #e77c40;
+  --pad: 0 24px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.toast-success,
+.toast-info,
+.toast-error {
+  background-color: #28a745 !important; 
+  color: white !important;
+  width: 250px !important;
+  height: 50px !important; 
+  font-size: 12px !important;
+  padding: 8px 16px !important; 
+  display: flex;
+  align-items: center;
+}
+
+.toast-info {
+  background-color: #17a2b8 !important; 
+}
+
+.toast-error {
+  background-color: #dc3545 !important;
+}
+
+.toast-container {
+  font-size: 12px;
+}
+
+.toast-success svg,
+.toast-info svg,
+.toast-error svg {
+  width: 16px !important;
+  height: 16px !important; 
+  margin-right: 8px;
+}
+
+.Toastify__close-button,
+.Toastify__close-button--light{
+  background: transparent;
+  border: none;
+}
+

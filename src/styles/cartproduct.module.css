@@ -1,0 +1,231 @@
+.productCart-Container {
+  width: 250px;
+  height: 442px;
+  position: relative;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.07);
+}
+
+.productCart-content-1 {
+  position: relative;
+  height: 268px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  cursor: pointer;
+}
+
+.productCart-content-1::before,
+.productCart-content-1::after {
+  content: "";
+  position: absolute;
+  background: #f7f7f7;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.productCart-content-1:hover::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+}
+
+.productCart-content-1 img {
+  width: 100%;
+  height: 268px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.productCart-content-1:hover img {
+  transform: scale(1.15);
+}
+
+.productCart-content-1 h4 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #1b1b1b;
+  padding-left: 10px;
+}
+
+.productCart-content-1:hover h4 {
+  display: none;
+  opacity: 0;
+}
+
+.likeShare-Container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  top: 100px;
+  color: #fff;
+  opacity: 0;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.productCart-content-1:hover .likeShare-Container {
+  opacity: 1;
+}
+
+.likeShare-Container p {
+  padding-left: 20px;
+  color: red;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.likeShare-Container .likeShare-icon {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  gap: 10px;
+}
+
+.productCart-content-2 {
+  padding: 10px;
+}
+
+.productCart-content-2 h4 {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.22px;
+  color: #606060;
+  margin-top: 10px;
+}
+
+.productCart-content-2 .text {
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16.59px;
+  margin-top: 10px;
+  color: #1b1b1b;
+}
+
+.productCart-content-2 .priceTag {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 20px;
+  color: #1b1b1b;
+}
+
+.productCart-content-2 .txt {
+  display: flex;
+  gap: 10px;
+}
+
+.productCart-content-2 .priceTag2 {
+  display: none;
+}
+
+.productCart-content-2 .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons img {
+  width: 90px;
+  height: 16px;
+  margin-top: 25px;
+}
+
+.productCart-Container .productCart-content-3 {
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease, opacity 1s ease;
+  border-top: 1px solid black;
+}
+
+.rate-number {
+  margin-top: 25px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  color: #606060;
+}
+
+.productCart-Container:hover {
+  height: 482px;
+}
+
+.productCart-Container:hover .productCart-content-3 {
+  opacity: 1;
+  max-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productCart-content-3 button {
+  background: transparent;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #1b1b1b;
+  cursor: pointer;
+}
+
+.share {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1b1b1b;
+}
+
+.productCart-Container:hover .share {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fbf9f9;
+  z-index: 1000;
+}
+
+.productCart-Container:hover .productCart-content-2 .priceTag2 {
+  display: block;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 20px;
+  color: #1b1b1b;
+}
+
+.productCart-Container:hover .productCart-content-2 .priceTag {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 20px;
+  color: #606060; 
+  text-decoration: line-through;
+  opacity: 0.5;
+}
